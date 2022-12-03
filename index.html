@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script defer src="./dist/main.js"></script>
+    
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="dataSumDisplay">
+        <p id="sumNumber">A felvett bolygók száma: 0</p>
+        <p id="sumAge">A bolygók átlagos életkora: 0</p>
+    </div>
+    <form>
+        <label for="planetNameInput">Bolygó neve: </label><br>
+        <input type="text" name="planetNameInput" id="planetNameInput"><br>
+        <label for="planetAgeInput">Bolgyó életkora (év): </label><br>
+        <input type="number" name="planetAgeInput" id="planetAgeInput"><br>
+        <label for="planetSizeInput">Bolygó átmérője (km, legalább 1500): </label><br>
+        <input type="number" name="planetSizeInput" id="planetSizeInput"><br>
+        <label for="planetWaterContentInput">Bolygót borítú vízfelület aránya (%): </label><br>
+        <input type="number" name="planetWaterContentInput" id="planetWaterContentInput"><br>
+        <button type="submit" id="submitButton">Bolygó rögzítése</button>
+        <div id="errorContainer"></div>
+    </form>
+</body>
+</html>
